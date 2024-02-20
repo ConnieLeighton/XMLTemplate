@@ -29,7 +29,6 @@ class Program
                     // Load the XML document from the file
                     XDocument xmlDoc = XDocument.Load(xmlFilePath);
 
-                    // Find and remove the careRecipientPayment node where careRecipientID is "0414835747"
                     XElement nodeToRemove = xmlDoc.Descendants("careRecipientPayment")
                         .FirstOrDefault(node => node.Element("careRecipientDetails")?.Element("careRecipientID")?.Value == ("0" + careRecipientID));
 
@@ -57,7 +56,6 @@ class Program
                     // Load the XML document from the file
                     XDocument xmlDoc = XDocument.Load(xmlFilePath);
 
-                    // Find and remove the careRecipientPayment node where careRecipientID is "0414835747"
                     XElement nodeToRemove = xmlDoc.Descendants("careRecipientPayment")
                         .FirstOrDefault(node => node.Element("careRecipientID")?.Value == ("0" + careRecipientID));
 
