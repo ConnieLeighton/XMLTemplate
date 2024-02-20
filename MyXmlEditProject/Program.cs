@@ -12,7 +12,7 @@ class Program
 
         // Specify the path to your XML file
         string xmlFilePath = "/Users/connieleighton/Documents/XMLEdit/OriginalXML.xml";
-        string spreadsheetPath = "/Users/connieleighton/Downloads/XMLConvert.xlsx";
+        string spreadsheetPath = "/Users/connieleighton/Downloads/20Feb.xlsx";
 
         using (var packageA = new ExcelPackage(new FileInfo(spreadsheetPath)))
         {
